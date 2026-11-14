@@ -18,15 +18,20 @@ This is an extensive documentative report of team <b>LEO's</b> progress in the N
 ## 1. Space Radiation
 ### I. Effects
 - Astronauts affected by 10 times higher radiation than on Earth.
+
 ### II. Risks
-- Increased cancer risk.
-- Nervous system damage.
-- Nausea
-- Vomiting
-- Anorexia
-- Fatigue
-- Cataracts
-- Cardiac Disease
-- Circulatory Disease
+
+<ol>
+<li> Increased cancer risk
+<li> Nervous system damage
+<li> Nausea
+<li> Vomiting
+<li> Anorexia
+<li> Fatigue
+<li> Cataracts
+<li> Cardiac Disease
+<li> Circulatory Disease
+</ol>
+
 ### III. Possible Solutions
 - 
