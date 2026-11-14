@@ -1,0 +1,15 @@
+# Put this file at .github/workflows/build-windows.yml in a GitHub repo with the other files.
+# Every push builds AstrOctopi.exe in the cloud; download it from the Actions tab (Artifacts).
+name: Build AstrOctopi
+on: [push, workflow_dispatch]
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pywebview pyinstaller
+      - run: pyinstaller --noconsole --onefile --name AstrOctopi --icon icon.ico --add-data "astroctopi.html;." astroctopi_app.py
+      - uses: actions/upload-artifact@v4
+        with: { name: AstrOctopi-windows, path: dist/AstrOctopi.exe }
