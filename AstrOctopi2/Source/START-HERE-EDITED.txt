@@ -1,0 +1,25 @@
+AstrOctopi combined edition 1.3.0 — editable source
+
+What was combined:
+  • AstrOctopi final = main UI, secure records, Electron desktop source, octopus artwork.
+  • Original AstrOctopi = original light/dark palettes, with a working persistent theme switcher.
+  • New Chrome-like Customize panel = presets, independent light/dark colors, background, cards, search bar.
+  • New top-bar search = navigation to existing app pages (no health content indexed).
+  • SOS = red button, Space keyboard panic-button drill, audible local alarm, simulated Earth link, voice-selectable rescue guides.
+
+Try the browser build:
+  1. Open a terminal inside this Source directory.
+  2. Run: python -m http.server 5173 --directory dist
+  3. Open: http://127.0.0.1:5173
+  4. Click Customize (sparkles in the header).
+  5. Press Space (outside an input) or the red SOS button to run the rescue drill.
+  6. Change Demo Earth link before the drill to test Received/Lost cases.
+  7. Demo mission: passcode 123456; medical passphrase mission-control.
+
+Do not double-click index.html directly: Web Crypto and ES modules need localhost or HTTPS.
+The old compiled Windows installer is omitted; the desktop source requires a fresh build.
+For a new Windows installer: npm install, then npm run desktop:build.
+Your existing installed 1.1.0 exe will NOT automatically update from these files.
+
+IMPORTANT: SOS is simulation-only: no real Earth signal, spaceship-wide alarm, or live medical authority.
+Voice features depend on browser permission and support.

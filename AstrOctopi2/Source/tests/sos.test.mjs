@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {sosHomeMarkup,sosTopButtonMarkup} from '../dist/sos.js';
+const home = sosHomeMarkup();
+const top = sosTopButtonMarkup();
+assert.match(home, /data-sos-action="trigger"/);
+assert.match(home, /data-sos-action="voice-home"/);
+assert.match(home, /value="received"/);
+assert.match(home, /value="lost"/);
+assert.match(home, /SPACE/);
+assert.match(top, /data-sos-action="trigger"/);
+assert.match(top, /SOS/);
+console.log('PASS: SOS homepage button, keyboard instructions, voice opt-in, simulated Earth-link outcomes, global access.');
