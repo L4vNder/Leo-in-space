@@ -1,0 +1,7 @@
+work/
+node_modules/
+.sites-runtime/
+outputs/
+.env*
+release/
+dist/downloads/
