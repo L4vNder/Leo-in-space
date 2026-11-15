@@ -1,0 +1,36 @@
+AstrOctopi 1.1.0 — Windows laptop edition
+
+For Windows 10 or 11, 64-bit (x64).
+
+INSTALL
+1. Open release\AstrOctopi-Setup-1.1.0-Windows-x64.exe.
+2. Follow the setup wizard. It installs for your Windows account and needs no administrator privileges.
+3. Open AstrOctopi from the desktop shortcut or Start menu.
+
+This build is unsigned. Windows may identify it as an unknown publisher; the installer has not been tested on a Windows machine in the authoring environment. Install only the original file you intended to download.
+
+The app includes its own desktop runtime, interface, icon, and fonts. No Python, Node.js, browser account, or internet connection is needed to use the installed app. Its NASA reference links open in your usual browser when you choose them.
+
+FIRST LAUNCH
+Choose 'Explore the demo mission' to try fictional data.
+Crew passcode: 123456
+Medical officer passphrase: mission-control
+
+For your own records, choose 'Set up my crew' and create unique passphrases. Example clinical ranges and demonstration limitations still apply; the desktop edition is not connected to flight hardware.
+
+TRANSFER EXISTING WEBSITE RECORDS
+1. In the web version, lock your profile to return to the crew screen.
+2. Choose 'Encrypted backup' and save the JSON backup.
+3. In the desktop app's crew screen, choose 'Restore backup'.
+4. Select the backup and enter your existing profile passcodes as usual.
+
+The website and desktop app have separate local stores. They do not synchronize automatically. Backup/restore transfers the entire mission; restore replaces the mission currently on that device. No health data is bundled in the installer.
+
+YOUR DATA
+Encrypted records remain in the desktop app's Windows user-data directory (%APPDATA%\AstrOctopi). Keep an encrypted mission backup outside that folder. Passwords cannot be recovered. Uninstalling removes application files and shortcuts while preserving your user-data folder. Do not delete it if you want to retain records.
+
+LOCKING
+Use 'Lock & switch' in the app or File > Lock profile. A 5-minute idle lock protects the personal screen. Closing and reopening the app also requires the profile passcode. Reminders run while the desktop app is open; closing it stops them.
+
+UNINSTALL
+Use Windows Settings > Apps > Installed apps > AstrOctopi, or the Start menu uninstall shortcut.

@@ -1,0 +1,23 @@
+{
+  "name": "astroctopi",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Encrypted device-local astronaut wellbeing prototype",
+  "scripts": {
+    "check": "node --check dist/app.js && node --check dist/core.js && node --check dist/sections.js && node --check dist/art.js",
+    "test": "node tests/core.test.mjs",
+    "desktop:dev": "electron .",
+    "desktop:build": "node desktop/build-windows.cjs",
+    "desktop:check": "node --test tests/desktop.test.cjs",
+    "desktop:download-assets": "node desktop/package-download.cjs"
+  },
+  "productName": "AstrOctopi",
+  "main": "desktop/main.cjs",
+  "author": "AstrOctopi",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "45.3.2",
+    "electron-builder": "26.18.0"
+  }
+}

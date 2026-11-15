@@ -1,0 +1,6 @@
+AstrOctopi final product
+
+Open the Windows x64 installer in release/ to install AstrOctopi. Its icon, fonts, and runtime are included.
+This project root contains the editable app code, assets, tests, and build scripts. See README.md and desktop/README.md for development setup.
+No Python or Node.js is needed to use the installer. Source development needs Node.js and npm dependencies installed as documented.
+Windows build is unsigned; native Windows launch testing was unavailable.
