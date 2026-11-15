@@ -14,7 +14,7 @@ Website and desktop records are separate; transfer them using an encrypted missi
 
 Open the [AstrOctopi browser preview](https://l4vnder.github.io/Leo-in-space/). It runs in your browser; you do not need to install the desktop app. Choose **Explore the demo mission** to try fictional crew data.
 
-The preview is published from `dist/` by GitHub Actions whenever changes reach `main`. To enable it in the repository, open **Settings → Pages** and set the source to **GitHub Actions**. The first deployment is available after the workflow completes.
+The preview is published from `dist/` by GitHub Actions when changes reach `main` or `Wangy`. The repository must be public for a public preview. Open **Settings → Pages** and set the source to **GitHub Actions**; the link works after the workflow completes.
 
 ### Run the web app locally
 
