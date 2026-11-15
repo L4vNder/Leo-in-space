@@ -10,10 +10,16 @@ Website and desktop records are separate; transfer them using an encrypted missi
 
 ## Open
 
-Use the published private Site, or serve the downloaded source with Python:
+### Try the browser demo
+
+Open the [AstrOctopi browser preview](https://l4vnder.github.io/Leo-in-space/). It runs in your browser; you do not need to install the desktop app. Choose **Explore the demo mission** to try fictional crew data.
+
+The preview is published from `dist/` by GitHub Actions whenever changes reach `main`. To enable it in the repository, open **Settings → Pages** and set the source to **GitHub Actions**. The first deployment is available after the workflow completes.
+
+### Run the web app locally
 
 ```sh
-python3 -m http.server 5173 --directory dist --bind 127.0.0.1
+python -m http.server 5173 --directory dist --bind 127.0.0.1
 ```
 
 Open http://localhost:5173 in a current browser. Use localhost or HTTPS: Web Crypto and service workers need a secure context. ES modules should be served rather than opening index.html directly.
