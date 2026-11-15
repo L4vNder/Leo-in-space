@@ -1,0 +1,16 @@
+AstrOctopi combined · version 1.2.0
+
+The AstrOctopi final design remains the base, enhanced with the original app's
+light/dark palettes and a Chrome-style color customizer and search bar.
+
+To use the web application:
+  1. Open the Source directory in a terminal.
+  2. Run: python -m http.server 5173 --directory dist
+  3. Go to http://127.0.0.1:5173
+  4. Click Customize (sparkles icon in the top-right corner).
+
+The optional Windows application source is in Source/desktop.
+Run npm install and npm run desktop:build to generate a fresh installer.
+An old Windows 1.1.0 installer would not contain these edits and is not included.
+
+Detailed instructions are in Source/START-HERE-EDITED.txt and Source/README.md.
